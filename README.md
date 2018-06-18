@@ -25,7 +25,8 @@ In order to run this sample application an Amazon Cognito identity pool must fir
 1. In the Cognito Console, click the *Create pool* button.
 1. In the Cognito Console, expand *View Details*, expand *View Policy Document* for the unauthenticated identity, and click the *Edit* button.
 1. In the text box, add `sdb:*` as an action. The policy document should resemble the following example:
-    ```
+
+```
     {  
     "Version":"2012-10-17",
     "Statement":[  
@@ -41,8 +42,9 @@ In order to run this sample application an Amazon Cognito identity pool must fir
       ]
     }
     ]
-  }
-    ```
+    }
+```
+
 1. In the Cognito Console, click the *Allow* button.
 1. In the Cognito Console, ensure that the *Sample code* tab is selected and copy the identity pool ID from the *Get AWS Credentials* section to the clipboard.
 1. In *Visual Studio* or *Visual Studio for Mac*, load the *TodoAWS* solution, expand the *TodoAWS* project and paste the clipboard value into the `Constants.CognitoIdentityPoolId` property.
